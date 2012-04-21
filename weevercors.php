@@ -28,100 +28,13 @@ class plgSystemWeeverCors extends JPlugin {
 
 		parent::__construct( $subject, $params );
 
-		header("Access-Control-Allow-Origin: 		http://weeverapp.com, http://stage.weeverapp.com");
+		header("Access-Control-Allow-Origin: 		http://weeverapp.com");
 		header("Access-Control-Allow-Credentials: 	true");
 		header("Access-Control-Allow-Headers: 		x-requested-with");
 		header("Access-Control-Request-Method: 		GET,POST");
 			
 			
 	}
-		/* Deprecated..
-		
-	public function onAfterDispatch() {
-				
-		if(JRequest::getVar('wxtest') == 1) {
-			echo "R"; die();
-		}
-		
-		if( JRequest::getVar('jFormToken') ) { */
-		/*
-			header('Content-type: 	application/json');		
-			header('Cache-Control: 	no-cache, must-revalidate');
-			
-			$session 					=& JFactory::getSession();
-		
-			$output 					= new stdClass();
-			$callback 					= JRequest::getVar('callback');
-			$output->results 			= array();
-			$output->results[]->token	= JHTML::_( 'form.token' );
-			
-			$json				= json_encode($output);
-			
-			$json				= $callback . "(" . $json . ");";
-			
-			echo $json;*/
-		/*	
-			echo JHTML::_( 'form.token' );
-			
-			jexit();
-		
-		}
-		
-		if( JRequest::getVar('jSessionID') ) {
-		
-			$session 		= &JFactory::getSession();
-			$sid 			= $session->getId();
-			$sname			= $session->getName();
-			
-			echo $sname . "|" . $sid . "|" . JHTML::_( 'form.token' );
-			
-			jexit();
-		
-		}
-		
-		if ( JRequest::getVar('jCookie') ) 
-		{
-			
-		*/	/*
-			What this does:
-			
-				Mobile browsers by default are set not to accept third-party cookies. 
-				This can prevent ad-tracking, but also prevents legitimate uses, like
-				logging into a remote system. The below code is a workaround that will
-				allow a domain that has been authorized by CORS to log in to Joomla.
-			
-			*/
-		/*	
-			?>
-			
-			<script type='text/javascript'>
-			
-				var submitCookie = function()	{
-				
-					document.forms["jCookieForm"].submit();
-				
-				}		
-			
-				window.addEventListener ? 
-				window.addEventListener("load",submitCookie,false) : 
-				window.attachEvent && window.attachEvent("onload",submitCookie);				
-			
-			</script>
-			
-			<form id="jCookieForm" action="index.php?jFormToken=1&jCorsRequest=1" method="post">
-			
-			</form>
-			
-			<?php
-			
-			jexit();
-		
-		}
-		
-	}
-	
-	*/
-
 	
 } 
 
