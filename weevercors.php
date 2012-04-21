@@ -28,7 +28,7 @@ class plgSystemWeeverCors extends JPlugin {
 
 		parent::__construct( $subject, $params );
 
-		header("Access-Control-Allow-Origin: 		http://weeverapp.com http://stage.weeverapp.com");
+		header("Access-Control-Allow-Origin: 		http://weeverapp.com, http://stage.weeverapp.com");
 		header("Access-Control-Allow-Credentials: 	true");
 		header("Access-Control-Allow-Headers: 		x-requested-with");
 		header("Access-Control-Request-Method: 		GET,POST");
