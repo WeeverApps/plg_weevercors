@@ -2,13 +2,13 @@
 <install type="plugin" version="1.5.0" group="system" method="upgrade">
 
 	 <name>Weever Apps CORS Connector</name>
-	 <creationDate>2012-04-21</creationDate>
+	 <creationDate>2012-05-31</creationDate>
 	 <author>Robert Gerald Porter</author>
 	 <authorEmail>rob@weeverapps.com</authorEmail>
 	 <authorUrl>http://www.weeverapps.com/</authorUrl>
 	 <copyright>(c) 2012 Weever Apps Inc.</copyright>
 	 <license>GPLv3</license>
-	 <version>0.1-PR1</version>
+	 <version>0.2</version>
 	 <releaseType>Preview Beta Relesae</releaseType>
 	 <description>Weever Apps Cross-Origin-Resource-Sharing (CORS) Plugin for Joomla</description>
 	 
