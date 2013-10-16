@@ -37,7 +37,7 @@ class plgSystemWeeverCors extends JPlugin {
 
 		header("Access-Control-Allow-Origin: " .	$this->origin);
 		header("Access-Control-Allow-Credentials: 	true");
-		header("Access-Control-Allow-Headers: 		x-requested-with");
+		header("Access-Control-Allow-Headers: 		x-requested-with, Accept-Encoding");
 		header("Access-Control-Request-Method: 		GET,POST");			
 			
 	}
